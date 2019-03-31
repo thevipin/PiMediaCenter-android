@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$Player">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btnPlayerSeekBack10"
+            android:background="@drawable/playerseakback"/>
+
+        <Button
+
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/btnPlayerSeekFor"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/playerseakforward"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/btnPlayerPauseNResume"
+            android:layout_below="@+id/btnPlayerSeekBack10"
+            android:layout_toEndOf="@+id/btnPlayerSeekBack10"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/playerplay"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/btnPlayerStop"
+            android:layout_below="@+id/btnPlayerSeekFor"
+            android:layout_toStartOf="@+id/btnPlayerSeekFor"
+            android:background="@drawable/playerstop"/>
+
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/btnPlayerShowSub"
+            android:layout_below="@+id/btnPlayerPauseNResume"
+            android:layout_toStartOf="@+id/btnPlayerPauseNResume"
+            android:background="@drawable/playersubtitles"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/btnPlayerHideSub"
+            android:layout_below="@+id/btnPlayerPauseNResume"
+            android:layout_alignStart="@+id/btnPlayerPauseNResume"
+            android:background="@drawable/playersubtitles"
+            android:layout_margin="10dp"/>
+
+        <Button
+
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/btnPlayerRewind"
+            android:layout_below="@+id/btnPlayerStop"
+            android:layout_toStartOf="@+id/btnPlayerForward"
+            android:background="@drawable/fastrewind"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/btnPlayerForward"
+            android:layout_below="@+id/btnPlayerStop"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/playerfastforward"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+</FrameLayout>

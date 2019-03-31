@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mediacenter.pi.vipin.pimediacenter.MainActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayoutKeys">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnUp"
+            android:background="@drawable/navigationup" />
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnUp"
+            android:id="@+id/btnEnter"
+            android:background="@drawable/navigationmenu"
+            android:layout_margin="30dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnEnter"
+            android:id="@+id/btnDown"
+            android:background="@drawable/navigationdown"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnUp"
+            android:layout_toRightOf="@id/btnEnter"
+            android:id="@+id/btnRight"
+            android:background="@drawable/navigationright"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLeft"
+            android:layout_below="@id/btnUp"
+            android:layout_toLeftOf="@id/btnEnter"
+            android:background="@drawable/navigationleft"/>
+
+        <Button
+            android:text="i"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btnInfo"
+            android:background="@drawable/navigationinfo"
+            android:layout_alignBaseline="@+id/btnUp"
+            android:layout_alignBottom="@+id/btnUp"
+            android:layout_alignStart="@+id/btnText" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btnText"
+            android:layout_below="@id/btnEnter"
+            android:layout_toRightOf="@id/btnEnter"
+            android:background="@drawable/navigationtext"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativelayoutText"
+        android:layout_below="@id/relativeLayoutKeys">
+
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btnTextSent"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/navigationsent"/>
+        <Button
+            android:text=""
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btnBack"
+            android:layout_toLeftOf="@id/btnTextSent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/navigationbackspace"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_toLeftOf="@id/btnBack"
+            android:id="@+id/editText"/>
+    </RelativeLayout>
+</RelativeLayout>
